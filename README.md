@@ -1,2 +1,2 @@
 # IrrigationTimer
-Arduino Based Irrigation
+Arduino Based  Irrigation scheduler
