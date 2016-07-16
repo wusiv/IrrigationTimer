@@ -21,7 +21,7 @@
 *
 *
 *
-/
+*/
 
 
 
@@ -38,10 +38,10 @@ Bitis: 17:27
 fark: 3:39 saat
 */
 int addr = 0;
-int startHour = 21;	// pump start hour 0-23
-int startMin = 18;  // pump start Minute 0-59
-int workHour = 0;	// Working Time (Hour) 
-int workMin = 1;	// Working Time (Minute) (1-60)	
+int startHour = 23;	// pump start hour 0-23
+int startMin = 10;  // pump start Minute 0-59
+int workHour = 3;	// Working Time (Hour) 
+int workMin = 30;	// Working Time (Minute) (1-60)	
 
 unsigned long milStart;	// start millis
 unsigned long taskStopTime;	// 
@@ -66,7 +66,7 @@ void loop() {
 	delay(1000);
 	DateTime now = RTC.now();
 	Serial.println("#### I N F O #########################");
-	Serial.print("# sonMilis: ");
+	Serial.print("# lastMillis: ");
 	Serial.println(EEPROMReadlong(1));
 	Serial.print("# TaskStopTime: ");
 	Serial.println(EEPROMReadlong(5));
