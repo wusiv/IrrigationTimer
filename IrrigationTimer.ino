@@ -171,8 +171,12 @@ long calcSec(int hh, int mm) {
 	return (h + m);
 }
 
-//This function will write a 4 byte (32bit) long to the eeprom at
-//the specified address to address + 3.
+/*
+
+This function will write a 4 byte (32bit) long to the eeprom at
+the specified address to address + 3.
+http://playground.arduino.cc/Code/EEPROMReadWriteLong
+*/
 void EEPROMWritelong(int address, long value)
 {
 	//Decomposition from a long to 4 bytes by using bitshift.
